@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--HTML Event Handler Code-->
 <html>
   <head>
     <title>JavaScript &amp; jQuery - Chapter 6: Events - Event Attributes</title>
@@ -8,11 +9,31 @@
     <div id="page">
       <h1>List King</h1>
       <h2>New Account</h2>
+	  <!--
+		Added four forms so there are five total to mess around with html event handlers
+	  -->
       <form method="post" action="http://www.example.org/register">
 
-        <label for="username">Create a username: </label>
-        <input type="text" id="username" onblur="checkUsername()" />
+        <label for="username0">Create a username: </label>
+        <input type="text" id="username0" onblur="checkUsername()" />
         <div id="feedback"></div>
+		
+        <label for="username1">Create a username: </label>
+        <input type="text" id="username1" onblur="checkUsername1()" />
+        <div id="feedback1"></div>
+		
+        <label for="username2">Create a username: </label>
+        <input type="text" id="username2" onblur="checkUsername2()" />
+        <div id="feedback2"></div>
+		
+        <label for="username3">Create a username: </label>
+        <input type="text" id="username3" onblur="checkUsername3()" />
+        <div id="feedback3"></div>
+		
+        <label for="username4">Create a username: </label>
+        <input type="text" id="username4" onblur="checkUsername4()" />
+        <div id="feedback4"></div>
+		
 
         <label for="password">Create a password: </label>
         <input type="password" id="password" />
